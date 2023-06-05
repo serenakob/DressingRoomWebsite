@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style> 
+      @font-face {
+        font-family: 'QuorgaRegular';
+        src: url('fonts/quorgaregular.ttf') format('truetype');
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            'phone': '414px',
+
+            'md':'768px',
+
+            'ipad pro': '1024px',
+
+            'xl':'1280px',
+          },
+          extend: {
+            fontFamily: {
+              QuorgaRegular: ['QuorgaRegular', 'Arial', 'sans-serif'],
+            },
+            colors: {
+              clifford: '#da373d',
+            },
+          },
+        },
+      };
+    </script>
+    <title>Landing Page</title>
+  </head>
+  
+  <body>
+    <div class="p-0 m-0">
+
+     <!-- NAVBAR -->
+     <div class="bg-gray-800">
+      <div class="mx-0 py-2 px-4 flex items-center justify-start text-white">
+        <img src="img/gmail.png" class="w-6 h-6 mr-2" alt="Gmail Logo">
+        <p class="text-sm">serenakobeissi@gmail.com</p>
+      </div>
+    </div>
+    
+    <!-- HEADER -->
+    <div class="bg-white">
+      <div class="header flex items-center justify-between py-5 px-6 ">
+        <img src="img/logo.png" class="h-6 w-7 ml-6 mt-1 inline-block md:h-12 md:w-14 phone:ml-0" />
+        <p class="hidden text-center flex-grow ml-40 font-QuorgaRegular font-medium md:text-4xl md:block">Dressing Room</p>
+        <ul class="flex items-center space-x-6">
+          <li><a href="Homepage.html" class="text-black hover:text-pink-500 phone:text-xs">Home</a></li>
+          <li><a href="NewIn.html" class="text-black hover:text-pink-500 phone:text-xs">New in</a></li>
+          <li><a href="#" class="text-black hover:text-pink-500 phone:text-xs">My cart</a></li>
+          <li><a href="#" class="text-black hover:text-pink-500 phone:text-xs">My orders</a></li>
+          <li><a href="ContactUs.html" class="text-black hover:text-pink-500 phone:text-xs">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- BODY -->
+    <div class="body">
+      <img src="img/homepagepic.png" class="mb-0">
+      <div class="relative w-1/2 h-400 overflow-x-scroll overflow-y-hidden whitespace-nowrap mx-auto flex items-center mt-10 mb-20 w-700">
+        <div class="scroll-arrow absolute top-1/2 transform -translate-y-1/2 transform -translate-x-0 bg-gray-400 text-white flex items-center justify-center w-8 h-16 text-2xl cursor-pointer z-2 left-0">
+          &lt;
+        </div>
+        <div class="scroll-content flex overflow-x-scroll scroll-smooth px-0">
+          <div class="scroll-items flex nowrap">
+          <a href="page1.html" class="flex-shrink-0 flex-grow-0 inline-block w-350 h-450 ml-9 mt-0 bg-gray-200">
+            <img src="img/item1.png" style="width: 300px; height: 400px;">
+          </a>
+          <a href="page1.html" class="flex-shrink-0 flex-grow-0 inline-block w-350 h-450 mr-0 ml-8 mt-0 bg-gray-200">
+            <img src="img/item1.png" style="width: 300px; height: 400px;">
+          </a>
+          <a href="page1.html" class="flex-shrink-0 flex-grow-0 inline-block w-350 h-450 mr-0 ml-8 mt-0 bg-gray-200">
+            <img src="img/item1.png" style="width: 300px; height: 400px;">
+          </a>
+          <a href="page1.html" class="flex-shrink-0 flex-grow-0 inline-block w-350 h-450 mr-0 ml-8 mt-0 bg-gray-200">
+            <img src="img/item1.png" style="width: 300px; height: 400px;">
+          </a>
+          <a href="page1.html" class="flex-shrink-0 flex-grow-0 inline-block w-350 h-450 mr-0 ml-8 mt-0 bg-gray-200">
+            <img src="img/item1.png" style="width: 300px; height: 400px;">
+          </a>
+          <a href="page1.html" class="flex-shrink-0 flex-grow-0 inline-block w-350 h-450 mr-0 ml-8 mt-0 bg-gray-200">
+            <img src="img/item1.png" style="width: 300px; height: 400px;">
+          </a>
+        </div>
+        <div class="scroll-arrow absolute top-1/2 transform -translate-y-1/2  transform -translate-x-0 bg-gray-400 text-white flex items-center justify-center w-8 h-16 text-2xl cursor-pointer z-2 right-0">
+          &gt;
+        </div>
+      </div>
+    </div>
+    
+    <!-- FOOTER -->
+    <div class="fixed bottom-0 left-0 flex items-center justify-center bg-gray-900 text-white py-2 text-center w-full">
+      <p class="text-white">
+        Contact Us at +961 76 232193 &#160;|&#160;&#160; <a href="about.html" class="underline text-red-200">About Us</a>
+      </p>
+    </div>
+
+  </div>
+  </body>
+</html>
